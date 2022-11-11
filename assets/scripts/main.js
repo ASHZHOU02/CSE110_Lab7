@@ -66,9 +66,7 @@ function initializeServiceWorker() {
            
       
           try {
-            const registration = navigator.serviceWorker.register("/sw.js", {
-              scope: "/",
-            });
+            const registration = navigator.serviceWorker.register("./sw.js" );
             
             if (registration.active) {
               console.log("Service worker active");
